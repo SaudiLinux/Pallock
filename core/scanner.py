@@ -84,7 +84,8 @@ class PallockScanner:
         # Disable SSL verification if configured
         if not self.config.verify_ssl:
             self.session.verify = False
-            requests.packages.urllib3.disable_warnings()
+            import urllib3
+            urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     
     async def scan_single_url(self, url: str):
         """Scan a single URL for vulnerabilities."""

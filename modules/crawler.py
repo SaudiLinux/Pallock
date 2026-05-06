@@ -13,7 +13,7 @@ import re
 from rich.console import Console
 import validators
 
-from ..core.logger import logger
+from core.logger import logger
 
 console = Console()
 

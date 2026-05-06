@@ -13,7 +13,7 @@ from urllib.parse import urljoin, urlparse
 from rich.console import Console
 import validators
 
-from ..core.logger import logger
+from core.logger import logger
 
 console = Console()
 
@@ -73,7 +73,7 @@ class AdvancedFuzzer:
             "javascript:alert('XSS')",
             "<svg onload=alert('XSS')>",
             "<iframe src=javascript:alert('XSS')>",
-            "'"><script>alert('XSS')</script>",
+            "'\"><script>alert('XSS')</script>",
             "</script><script>alert('XSS')</script>",
             "<body onload=alert('XSS')>",
             "<input onfocus=alert('XSS') autofocus>",

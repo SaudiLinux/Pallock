@@ -65,7 +65,7 @@ def show_banner():
     # Create panel
     panel = Panel(
         Align.center(info_text),
-        title=Align.center(styled_banner),
+        title=styled_banner,
         border_style=color,
         padding=(1, 2)
     )

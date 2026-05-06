@@ -29,7 +29,6 @@ class ZeroDayDetector:
         self.ml_model = None
         self.vectorizer = None
         self.scaler = None
-        self._load_models()
         
         # Known vulnerability patterns
         self.vulnerability_patterns = {
@@ -162,6 +161,8 @@ class ZeroDayDetector:
                 '{"constructor": {"prototype": {"polluted": true}}}'
             ]
         }
+        
+        self._load_models()
     
     def _load_models(self):
         """Load pre-trained ML models or train new ones."""

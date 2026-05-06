@@ -13,7 +13,7 @@ from datetime import datetime
 from rich.console import Console
 import time
 
-from ..core.logger import logger
+from core.logger import logger
 
 console = Console()
 

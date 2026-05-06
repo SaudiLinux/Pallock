@@ -97,8 +97,8 @@ Examples:
     args = parser.parse_args()
     
     # Show banner
-    if not args.quiet:
-        show_banner()
+    # if not args.quiet:
+    #     show_banner()
     
     # Setup logging
     setup_logging(verbose=args.verbose, quiet=args.quiet)
