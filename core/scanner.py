@@ -396,10 +396,11 @@ class PallockScanner:
     async def _generate_exploits(self):
         """Generate exploit proofs-of-concept for discovered vulnerabilities."""
         
+        print(f"DEBUG: Generating exploits for {len(self.vuln_logger.findings)} findings")
         logger.info("Generating exploit proofs-of-concept...")
         
         for finding in self.vuln_logger.findings:
-            if finding['severity'] in ['CRITICAL', 'HIGH']:
+            if finding['severity'] in ['CRITICAL', 'HIGH', 'MEDIUM']:
                 exploit = await self.exploit_framework.generate_exploit(finding)
                 if exploit:
                     logger.info(f"Generated exploit for {finding['type']}")
