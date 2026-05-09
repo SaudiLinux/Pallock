@@ -29,8 +29,7 @@ pip install -r requirements.txt
 
 ### فحص سريع لرابط واحد
 ```bash
-python pallock.py -u http://example.com
-```
+python pallock.py -u (http://example.com) --output reports/scan_result.json --format json --quiet```
 
 ### فحص عميق مع تفعيل اكتشاف Zero-Day
 ```bash
