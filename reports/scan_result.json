@@ -1,0 +1,21 @@
+{
+  "scan_id": "d6491420-94bb-4cec-99c6-cd99a9ce6a93",
+  "scan_info": {
+    "start_time": "2026-05-09T20:03:10.385105",
+    "end_time": "2026-05-09T20:07:25.518435",
+    "config": {
+      "deep_scan": false,
+      "zero_day_only": false,
+      "max_threads": 10
+    }
+  },
+  "statistics": {
+    "total": 0,
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "zero_days": 0
+  },
+  "findings": []
+}

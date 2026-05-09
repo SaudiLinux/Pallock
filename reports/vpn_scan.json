@@ -1,0 +1,21 @@
+{
+  "scan_id": "ea138876-dc0c-4e2a-aefd-a43fd4869a8c",
+  "scan_info": {
+    "start_time": "2026-05-09T20:03:04.042030",
+    "end_time": "2026-05-09T20:07:22.107272",
+    "config": {
+      "deep_scan": false,
+      "zero_day_only": false,
+      "max_threads": 10
+    }
+  },
+  "statistics": {
+    "total": 0,
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "zero_days": 0
+  },
+  "findings": []
+}
